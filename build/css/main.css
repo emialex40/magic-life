@@ -1,9 +1,23 @@
 @font-face {
-  font-family: "MaryadProRegular";
+  font-family: "ProximaNovaBold";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot");
+  src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaBold/ProximaNovaBold.woff") format("woff"), url("../fonts/ProximaNovaBold/ProximaNovaBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "ProximaNovaExtrabold";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/ProximaNovaExtrabold/ProximaNovaExtrabold.eot");
+  src: url("../fonts/ProximaNovaExtrabold/ProximaNovaExtrabold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaExtrabold/ProximaNovaExtrabold.woff") format("woff"), url("../fonts/ProximaNovaExtrabold/ProximaNovaExtrabold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "ProximaNovaSemibold";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/MaryadProRegular/MaryadProRegular.eot");
-  src: url("../fonts/MaryadProRegular/MaryadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MaryadProRegular/MaryadProRegular.woff") format("woff"), url("../fonts/MaryadProRegular/MaryadProRegular.ttf") format("truetype"); }
+  src: url("../fonts/ProximaNovaSemibold/ProximaNovaSemibold.eot");
+  src: url("../fonts/ProximaNovaSemibold/ProximaNovaSemibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaSemibold/ProximaNovaSemibold.woff") format("woff"), url("../fonts/ProximaNovaSemibold/ProximaNovaSemibold.ttf") format("truetype"); }
 
 a, abbr, address, article, aside, audio, b,
 blockquote, body, canvas, caption, cite, code,
@@ -37,43 +51,96 @@ body {
   font-size: 16px;
   position: relative;
   line-height: 1.2;
-  font-family: "MaryadProRegular", sans-serif;
-  background: #f4f4f4;
+  font-family: "ProximaNovaSemibold", sans-serif;
+  background: #000000;
   overflow-x: hidden;
-  opacity: 1; }
-  @media only screen and (max-width: 1002px) {
-    body {
-      font-size: 14px; } }
+  opacity: 1;
+  -webkit-font-smoothing: antialiased;
+  -webkit-appearance: none; }
 
 .cent {
   margin: 0 auto; }
 
 /*======== header ==========*/
-header {
+.header {
   width: 100%;
-  height: 80px;
-  background: blue; }
-  header h1 {
-    font-size: 40px;
-    color: white;
-    text-align: center; }
+  height: 684px;
+  overflow: hidden;
+  position: relative;
+  background: url(../img/top_bg.jpg) no-repeat center center;
+  clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
-/*========== content =========* */
-section {
+/*========== scills =========* */
+.scills {
   width: 100%;
-  height: 100vh; }
-  section h2 {
-    font-size: 40px;
-    color: red;
-    text-align: center;
-    vertical-align: middle; }
+  height: 858px;
+  position: relative;
+  background: url(../img/bg2.jpg) no-repeat center center;
+  -webkit-clip-path: polygon(0 14.3%, 100% 0, 100% 100%, 0 94%);
+          clip-path: polygon(0 14.3%, 100% 0, 100% 100%, 0 94%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: -108px; }
+
+/*========== system ==========*/
+.system {
+  width: 100%;
+  height: 637px;
+  position: relative;
+  background: url(../img/bg3.jpg) no-repeat center center;
+  clip-path: polygon(0 0, 100% 8%, 100% 91.5%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 8%, 100% 91.5%, 0 100%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: -36px; }
+
+/*=========== business ==========*/
+.business {
+  width: 100%;
+  height: 939px;
+  position: relative;
+  background: url(../img/bg4.jpg) no-repeat center center;
+  clip-path: polygon(0 6.3%, 100% 0, 100% 100%, 0 94%);
+  -webkit-clip-path: polygon(0 6.3%, 100% 0, 100% 100%, 0 94%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: -39px; }
+
+/*========= get ==========*/
+.get {
+  width: 100%;
+  height: 802px;
+  position: relative;
+  background: url(../img/bg5.jpg) no-repeat center center;
+  clip-path: polygon(0 0, 100% 6.5%, 100% 87.3%, 0 94%);
+  -webkit-clip-path: polygon(0 0, 100% 6.5%, 100% 87.3%, 0 94%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: -41px; }
+
+/*========== chenging ===========*/
+.chenging {
+  width: 100%;
+  height: 488px;
+  position: relative;
+  background: url(../img/bg6.jpg) no-repeat center center;
+  clip-path: polygon(100% 0, 100% 89%, 50% 100%, 0 89%, 0 11.3%);
+  -webkit-clip-path: polygon(100% 0, 100% 89%, 50% 100%, 0 89%, 0 11.3%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: -86px; }
 
 /*========= footer ===========*/
 .footer {
   width: 100%;
-  height: 80px;
-  background: blue; }
-  .footer h2 {
-    color: white;
-    font-size: 40px;
-    text-align: center; }
+  height: 1037px;
+  position: relative;
+  background: url(../img/last_bg1.jpg) no-repeat center center;
+  clip-path: polygon(50% 5.2%, 100% 0, 100% 100%, 0 100%, 0 0);
+  -webkit-clip-path: polygon(50% 5.2%, 100% 0, 100% 100%, 0 100%, 0 0);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: -38px; }

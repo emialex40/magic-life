@@ -67,9 +67,9 @@ gulp.task('browser-sync', function() {
 		server: {
 			baseDir: 'src'
 		},
-		notify: false
-		// tunnel: true,
-		// tunnel: "projectmane", //Demonstration page: http://projectmane.localtunnel.me
+		notify: false,
+		tunnel: true,
+		tunnel: "projectmane" //Demonstration page: http://gta.localtunnel.me
 	});
 });
 
