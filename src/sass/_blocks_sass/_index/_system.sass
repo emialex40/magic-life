@@ -8,3 +8,39 @@
   box-sizing: border-box
   margin-top: -36px
   object-fit: cover
+  &__wrapper
+    width: 100%
+    position: relative
+    &:before
+      +psevdo(416px, 590px)
+      background: url(../img/women1.png) no-repeat center center
+      bottom: -165px
+      left: -47px
+  &__wrap-child
+    width: proc(770,1170)
+    float: right
+  &__header
+    font-family: $extra
+    font-size: 35px
+    font-weight: 400
+    color: $white
+    padding-top: 142px
+    word-spacing: 4px
+    line-height: 1
+    +text-shadow
+  &__items
+    width: 100%
+    margin-top: 41px
+  &__left
+    width: calc(50% - 10px)
+  &__right
+    width: calc(50% - 10px)
+  &__item
+    +itemObj($white, 16, 95px)
+    padding: 20px 58px
+    box-sizing: border-box
+  &__txt
+    font-family: $default
+    font-size: 24px
+    font-weight: 400
+    color: $black

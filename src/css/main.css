@@ -58,9 +58,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-appearance: none; }
 
+.clear {
+  clear: both; }
+
 .container {
   max-width: 1170px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .flex-wrap {
   display: -webkit-box;
@@ -173,7 +178,7 @@ body {
 /*========== scills =========* */
 .scills {
   width: 100%;
-  height: 858px;
+  height: 901px;
   position: relative;
   background: url(../img/bg2.jpg) no-repeat center center;
   -webkit-clip-path: polygon(0 14.3%, 100% 0, 100% 100%, 0 94%);
@@ -182,6 +187,80 @@ body {
           box-sizing: border-box;
   margin-top: -108px;
   object-fit: cover; }
+  .scills__wrapper {
+    width: 100%;
+    position: relative; }
+    .scills__wrapper:after {
+      content: '';
+      width: 477px;
+      height: 876px;
+      position: absolute;
+      bottom: -76px;
+      right: -100px;
+      background: url(../../../img/men1.png) no-repeat center center; }
+  .scills__header {
+    width: 47%;
+    font-family: "ProximaNovaExtrabold", sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    color: #ffffff;
+    padding-top: 151px;
+    word-spacing: 4px;
+    line-height: 1;
+    text-shadow: -0   -3px 0   #000000, 0   -3px 0   #000000, -0    3px 0   #000000, 0    3px 0   #000000, -3px -0   0   #000000, 3px -0   0   #000000, -3px  0   0   #000000, 3px  0   0   #000000, -1px -3px 0   #000000, 1px -3px 0   #000000, -1px  3px 0   #000000, 1px  3px 0   #000000, -3px -1px 0   #000000, 3px -1px 0   #000000, -3px  1px 0   #000000, 3px  1px 0   #000000, -2px -3px 0   #000000, 2px -3px 0   #000000, -2px  3px 0   #000000, 2px  3px 0   #000000, -3px -2px 0   #000000, 3px -2px 0   #000000, -3px  2px 0   #000000, 3px  2px 0   #000000, -3px -3px 0   #000000, 3px -3px 0   #000000, -3px  3px 0   #000000, 3px  3px 0   #000000, -3px -3px 0   #000000, 3px -3px 0   #000000, -3px  3px 0   #000000, 3px  3px 0   #000000; }
+  .scills__items {
+    width: 63%;
+    margin-top: 47px; }
+  .scills__left {
+    width: -webkit-calc(50% - 16px);
+    width: calc(50% - 16px); }
+  .scills__right {
+    width: -webkit-calc(50% - 16px);
+    width: calc(50% - 16px); }
+  .scills__item {
+    display: inline-block;
+    width: 100%;
+    height: 165px;
+    background: rgba(0, 0, 0, 0.7);
+    margin-bottom: 16px;
+    -webkit-border-radius: 15px;
+            border-radius: 15px;
+    padding: 24px 17px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .scills__icon {
+    width: 68px;
+    height: 67px;
+    display: inline-block;
+    float: left; }
+  .scills__txt {
+    display: inline-block;
+    width: 235px;
+    font-family: "ProximaNovaSemibold", sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    float: right; }
+
+.accent-txt {
+  font-size: 30px !important; }
+
+.si1 {
+  background: url(../img/scills_icons.png) no-repeat 0 0; }
+
+.si2 {
+  background: url(../img/scills_icons.png) no-repeat 0 -100px; }
+
+.si3 {
+  background: url(../img/scills_icons.png) no-repeat 0 -193px; }
+
+.si4 {
+  background: url(../img/scills_icons.png) no-repeat -86px 0; }
+
+.si5 {
+  background: url(../img/scills_icons.png) no-repeat -86px -99px; }
+
+.si6 {
+  background: url(../img/scills_icons.png) no-repeat -86px -194px; }
 
 /*========== system ==========*/
 .system {
@@ -195,6 +274,54 @@ body {
           box-sizing: border-box;
   margin-top: -36px;
   object-fit: cover; }
+  .system__wrapper {
+    width: 100%;
+    position: relative; }
+    .system__wrapper:before {
+      content: '';
+      width: 416px;
+      height: 590px;
+      position: absolute;
+      background: url(../img/women1.png) no-repeat center center;
+      bottom: -165px;
+      left: -47px; }
+  .system__wrap-child {
+    width: 65.81297%;
+    float: right; }
+  .system__header {
+    font-family: "ProximaNovaExtrabold", sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    color: #ffffff;
+    padding-top: 142px;
+    word-spacing: 4px;
+    line-height: 1;
+    text-shadow: -0   -3px 0   #000000, 0   -3px 0   #000000, -0    3px 0   #000000, 0    3px 0   #000000, -3px -0   0   #000000, 3px -0   0   #000000, -3px  0   0   #000000, 3px  0   0   #000000, -1px -3px 0   #000000, 1px -3px 0   #000000, -1px  3px 0   #000000, 1px  3px 0   #000000, -3px -1px 0   #000000, 3px -1px 0   #000000, -3px  1px 0   #000000, 3px  1px 0   #000000, -2px -3px 0   #000000, 2px -3px 0   #000000, -2px  3px 0   #000000, 2px  3px 0   #000000, -3px -2px 0   #000000, 3px -2px 0   #000000, -3px  2px 0   #000000, 3px  2px 0   #000000, -3px -3px 0   #000000, 3px -3px 0   #000000, -3px  3px 0   #000000, 3px  3px 0   #000000, -3px -3px 0   #000000, 3px -3px 0   #000000, -3px  3px 0   #000000, 3px  3px 0   #000000; }
+  .system__items {
+    width: 100%;
+    margin-top: 41px; }
+  .system__left {
+    width: -webkit-calc(50% - 10px);
+    width: calc(50% - 10px); }
+  .system__right {
+    width: -webkit-calc(50% - 10px);
+    width: calc(50% - 10px); }
+  .system__item {
+    display: inline-block;
+    width: 100%;
+    height: 95px;
+    background: #ffffff;
+    margin-bottom: 16px;
+    -webkit-border-radius: 15px;
+            border-radius: 15px;
+    padding: 20px 58px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .system__txt {
+    font-family: "ProximaNovaSemibold", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000; }
 
 /*=========== business ==========*/
 .business {

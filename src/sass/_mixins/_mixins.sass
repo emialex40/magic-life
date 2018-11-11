@@ -1,2 +1,20 @@
+$px: px
+
 =text-shadow
   text-shadow: -0   -3px 0   #000000, 0   -3px 0   #000000, -0    3px 0   #000000, 0    3px 0   #000000, -3px -0   0   #000000, 3px -0   0   #000000, -3px  0   0   #000000, 3px  0   0   #000000, -1px -3px 0   #000000, 1px -3px 0   #000000, -1px  3px 0   #000000, 1px  3px 0   #000000, -3px -1px 0   #000000, 3px -1px 0   #000000, -3px  1px 0   #000000, 3px  1px 0   #000000, -2px -3px 0   #000000, 2px -3px 0   #000000, -2px  3px 0   #000000, 2px  3px 0   #000000, -3px -2px 0   #000000, 3px -2px 0   #000000, -3px  2px 0   #000000, 3px  2px 0   #000000, -3px -3px 0   #000000, 3px -3px 0   #000000, -3px  3px 0   #000000, 3px  3px 0   #000000, -3px -3px 0   #000000, 3px -3px 0   #000000, -3px  3px 0   #000000, 3px  3px 0   #000000
+
+=itemObj($color, $bottom, $height)
+  $px: px
+  display: inline-block
+  width: 100%
+  height: $height
+  background: $color
+  margin-bottom: $bottom + $px
+  border-radius: 15px
+
+=psevdo($wh, $ht)
+  content: ''
+  width: $wh
+  height: $ht
+  position: absolute
+

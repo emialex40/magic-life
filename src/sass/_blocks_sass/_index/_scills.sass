@@ -1,11 +1,75 @@
 .scills
   width: 100%
-  height: 858px
+  height: 901px
   position: relative
   background: url(../img/bg2.jpg) no-repeat center center
   clip-path: polygon(0 14.3%, 100% 0, 100% 100%, 0 94%)
   box-sizing: border-box
   margin-top: -108px
   object-fit: cover
+  &__wrapper
+    width: 100%
+    position: relative
+    &:after
+      +psevdo(477px,876px)
+      bottom: -76px
+      right: -100px
+      background: url(../../../img/men1.png) no-repeat center center
+  &__header
+    width: 47%
+    font-family: $extra
+    font-size: 35px
+    font-weight: 400
+    color: $white
+    padding-top: 151px
+    word-spacing: 4px
+    line-height: 1
+    +text-shadow
+  &__items
+    width: 63%
+    margin-top: 47px
+  &__left
+    width: calc(50% - 16px)
+  &__right
+    width: calc(50% - 16px)
+  &__item
+    +itemObj($blackOp, 16, 165px)
+    padding: 24px 17px
+    box-sizing: border-box
+  &__icon
+    width: 68px
+    height: 67px
+    display: inline-block
+    float: left
+  &__txt
+    display: inline-block
+    width: 235px
+    font-family: $default
+    font-size: 18px
+    color: $white
+    float: right
+
+.accent-txt
+  font-size: 30px !important
+
+.si1
+  background: url(../img/scills_icons.png) no-repeat 0 0
+
+.si2
+  background: url(../img/scills_icons.png) no-repeat 0 -100px
+
+.si3
+  background: url(../img/scills_icons.png) no-repeat 0 -193px
+
+.si4
+  background: url(../img/scills_icons.png) no-repeat -86px 0
+
+.si5
+  background: url(../img/scills_icons.png) no-repeat -86px -99px
+
+.si6
+  background: url(../img/scills_icons.png) no-repeat -86px -194px
+
+
 
 
