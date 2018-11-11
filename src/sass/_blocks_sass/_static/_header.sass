@@ -2,11 +2,49 @@
   width: 100%
   height: 684px
   overflow: hidden
-  position: relative
   background: url(../img/top_bg.jpg) no-repeat center center
   clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%)
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%)
   box-sizing: border-box
+  object-fit: cover
+  &__wrapper
+    margin-top: 80px
+    position: relative
+    &:before
+      content: ''
+      width: 678px
+      height: 417px
+      position: absolute
+      top: 122px
+      left: -58px
+      background: url(../img/car.png) no-repeat center center
+  &__left
+    width: 53.7%
+  &__right
+    width: 40%
+  &__logo
+    margin-left: procChild(338,53.7,1170) //338px
+  &__social
+    position: absolute
+    top: 0
+    right: 0
+  &__submit
+    width: 100%
+    padding-top: 112px
+  &__text
+    color: $white
+    font-family: $extra
+    font-size: 34px
+    //font-weight: 400
+    line-height: 36px
+    word-spacing: 4px
+    +text-shadow
+  &__button
+    width: procChild(459,40,1170) //459px
+    height: 73px
+    margin-top: 37px
+
+
 
 
 

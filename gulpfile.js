@@ -68,8 +68,8 @@ gulp.task('browser-sync', function() {
 			baseDir: 'src'
 		},
 		notify: false,
-		tunnel: true,
-		tunnel: "projectmane" //Demonstration page: http://gta.localtunnel.me
+		//tunnel: true,
+		//tunnel: "projectmane" //Demonstration page: http://gta.localtunnel.me
 	});
 });
 

@@ -17,4 +17,9 @@
   $s: %
   @return #{$pc * 100 / $base + 0.001}$s
 
+@function procChild($px, $proc, $base)
+    $s: %
+    $one: $base / 100 * $proc
+    @return  #{$px / $one *100 + 0.3}$s
+
 

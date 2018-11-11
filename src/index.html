@@ -3,11 +3,7 @@
 <!-- -var name = ["Главная", "Вторая", "Третья"]-->
 <!-- -var menu = [{url: "https://www.facebook.com/", name: "Главная"},{url: "https://www.facebook.com/", name: "Вторая"},{url: "https://www.facebook.com/", name: "Третья"}, {url: "https://www.facebook.com/", name: "Четвертая"}]-->
 <!-- -var menu2 = [{url: "https://www.facebook.com/", name: "Главная"},{url: "https://www.facebook.com/", name: "Вторая"},{url: "https://www.facebook.com/", name: "Третья"}, {url: "https://www.facebook.com/", name: "Четвертая"}]-->
-<!-- -var menu3 = [{url: "https://www.facebook.com/", name: "Главная"},{url: "https://www.facebook.com/", name: "Вторая"},{url: "https://www.facebook.com/", name: "Третья"}, {url: "https://www.facebook.com/", name: "Четвертая"}]-->
-<!--mixin list(...items)-->
-<!--   ul-->
-<!--      each item in items-->
-<!--         li= item--><!DOCTYPE html>
+<!-- -var menu3 = [{url: "https://www.facebook.com/", name: "Главная"},{url: "https://www.facebook.com/", name: "Вторая"},{url: "https://www.facebook.com/", name: "Третья"}, {url: "https://www.facebook.com/", name: "Четвертая"}]--><!DOCTYPE html>
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
@@ -19,7 +15,37 @@
   </head>
   <body>
     <!--header-->
-    <header class="header"></header>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="flex-wrap">
+            <div class="header__left">
+              <div class="header__logo logo"><img class="logo__img" src="img/logo.png" alt="Logo"></div>
+            </div>
+            <div class="header__right">
+              <div class="header__submit">
+                <div class="header__text">
+                  Это ИГРА, пройдя которую
+                  ТЫ получишь готовый
+                  прибыльный БИЗНЕС
+                </div>
+                <div class="header__button">
+                  <button class="btn" type="button"><img class="btn-img" src="img/btn_txt.svg" alt="btn"/>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__social">
+            <ul class="soc_icons">
+              <li class="soc_icons__icon"><a class="soc_icons__link vk" href="#"></a></li>
+              <li class="soc_icons__icon"><a class="soc_icons__link fb" href="#"></a></li>
+              <li class="soc_icons__icon"><a class="soc_icons__link insta" href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <!--content-->
     <section class="scills">
       <h2>Its content!!!</h2>
