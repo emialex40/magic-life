@@ -335,6 +335,58 @@ body {
           box-sizing: border-box;
   margin-top: -39px;
   object-fit: cover; }
+  .business__wrapper {
+    width: 100%;
+    position: relative;
+    padding-top: 108px; }
+    .business__wrapper:after {
+      content: '';
+      width: 419px;
+      height: 745px;
+      position: absolute;
+      background: url(../img/men2.png) no-repeat center center;
+      top: 18px;
+      right: 0; }
+  .business__left {
+    width: 57%; }
+  .business__right {
+    width: 37%;
+    position: relative; }
+  .business__header {
+    font-family: "ProximaNovaExtrabold", sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    color: #ffffff;
+    word-spacing: 4px;
+    line-height: 1;
+    text-shadow: -0   -3px 0   #000000, 0   -3px 0   #000000, -0    3px 0   #000000, 0    3px 0   #000000, -3px -0   0   #000000, 3px -0   0   #000000, -3px  0   0   #000000, 3px  0   0   #000000, -1px -3px 0   #000000, 1px -3px 0   #000000, -1px  3px 0   #000000, 1px  3px 0   #000000, -3px -1px 0   #000000, 3px -1px 0   #000000, -3px  1px 0   #000000, 3px  1px 0   #000000, -2px -3px 0   #000000, 2px -3px 0   #000000, -2px  3px 0   #000000, 2px  3px 0   #000000, -3px -2px 0   #000000, 3px -2px 0   #000000, -3px  2px 0   #000000, 3px  2px 0   #000000, -3px -3px 0   #000000, 3px -3px 0   #000000, -3px  3px 0   #000000, 3px  3px 0   #000000, -3px -3px 0   #000000, 3px -3px 0   #000000, -3px  3px 0   #000000, 3px  3px 0   #000000; }
+  .business__item {
+    width: 100%;
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: -11px;
+    -webkit-border-radius: 15px;
+            border-radius: 15px;
+    margin-top: 29px; }
+  .business__txt {
+    display: block;
+    font-family: "ProximaNovaSemibold", sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    padding: 0 28px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .business__button {
+    width: 100%;
+    height: 81px;
+    position: absolute;
+    left: 0;
+    bottom: 0; }
 
 /*========= get ==========*/
 .get {

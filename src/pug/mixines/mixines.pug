@@ -1,3 +1,5 @@
+include  vars
+
 mixin link(className, href,name)
    a(class= className)(href= href)= name
 
@@ -7,3 +9,10 @@ mixin image(className, src, alt)
 mixin button(classN,type, className, src, alt)
   button(class= classN, type= type)
       +image(className, src, alt)
+
+mixin bsItem
+  for text in bsText
+    .business__item
+      .business__txt
+        span= text
+
