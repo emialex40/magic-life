@@ -1,5 +1,13 @@
 $(document).ready(function () {
+    var modal = $('#modal');
 
-    // alert('Ok!');
+    $('.js-btn').on('click', function () {
+      modal.fadeIn(600)
+    });
+
+    $('.js-close').on('click', function () {
+        modal.fadeOut(600);
+    });
+
 
 });

@@ -1,5 +1,22 @@
 footer.footer
-   h2 Its Footer!
+   .container
+      .footer__wrapper
+         .footer__top
+            .footer__logo
+               include ../../components/logo
+            .footer__header
+               span Что ждет тебя впереди
+         .clear
+         .footer__items
+            .footer__item.title1 Финансовый рост
+            .footer__item.title2 Модное, стильное окружение
+            .footer__item.title3 Яркие интересные события
+            .footer__item.title4 Путешествия
+            .footer__item.title5 Строй бизнес из любой точки мира
+         .footer__button
+            +button('btn', 'button', 'btn-img', 'img/user_btn.svg', 'btn')
+
+include ../../components/modal
 
 
 

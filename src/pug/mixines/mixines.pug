@@ -7,7 +7,7 @@ mixin image(className, src, alt)
   img(class= className, src= src, alt= alt)
 
 mixin button(classN,type, className, src, alt)
-  button(class= classN, type= type)
+  button.js-btn(class= classN, type= type)
       +image(className, src, alt)
 
 mixin bsItem

@@ -33,7 +33,7 @@
                   прибыльный БИЗНЕС
                 </div>
                 <div class="header__button">
-                  <button class="btn" type="button"><img class="btn-img" src="img/btn_txt.svg" alt="btn"/>
+                  <button class="js-btn btn" type="button"><img class="btn-img" src="img/btn_txt.svg" alt="btn"/>
                   </button>
                 </div>
               </div>
@@ -170,7 +170,7 @@
             </div>
             <div class="business__right">
               <div class="business__button">
-                <button class="btn" type="button"><img class="btn-img" src="img/btn_txt.svg" alt="btn"/>
+                <button class="js-btn btn" type="button"><img class="btn-img" src="img/btn_txt.svg" alt="btn"/>
                 </button>
               </div>
             </div>
@@ -183,7 +183,7 @@
       <div class="container">
         <div class="get__wrapper">
           <div class="get__right">
-            <div class="get__header"><span>Учавствуй в проекте MAGIC LIFE и получи:.</span></div>
+            <div class="get__header"><span>Учавствуй в проекте MAGIC LIFE и получи:</span></div>
             <div class="get__items flex-wrap">
               <div class="get__item">
                 <div class="get__title"><span>Возможность открыть свое дело без вложений и риска</span></div>
@@ -220,15 +220,95 @@
               </div>
             </div>
           </div>
+          <div class="clear"></div>
         </div>
       </div>
     </section>
     <!--chenging-->
-    <section class="chenging"></section>
+    <section class="chenging">
+      <div class="container">
+        <div class="chenging__wrapper">
+          <div class="chenging__header"><span>Запустить маштабные изменения ПРОСТО</span></div>
+          <ul class="chenging__items flex-wrap">
+            <li class="chenging__item">
+              <div class="chenging__icon ch1"></div><span class="chenging__txt">
+                Получи первичную
+                информацию просто
+                оставив заявку на
+                сайте</span>
+            </li>
+            <li class="chenging__item">
+              <div class="chenging__icon ch2"></div><span class="chenging__txt">
+                С тобой свяжется
+                Ментор, который
+                расскажет все
+                детали</span>
+            </li>
+            <li class="chenging__item">
+              <div class="chenging__icon ch3"></div><span class="chenging__txt">
+                Ты подключишься к
+                игре, где проходя
+                уровни, будешь
+                зарабатывать
+                реальные деньги</span>
+            </li>
+            <li class="chenging__item">
+              <div class="chenging__icon ch4"></div><span class="chenging__txt">
+                Создашь
+                свой бизнес и
+                будешь заниматься
+                его развитием</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <!--footer-->
     <footer class="footer">
-      <h2>Its Footer!</h2>
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__top">
+            <div class="footer__logo">
+              <div class="logo"><img class="logo__img" src="img/logo.png" alt="Logo"></div>
+            </div>
+            <div class="footer__header"><span>Что ждет тебя впереди</span></div>
+          </div>
+          <div class="clear"></div>
+          <div class="footer__items">
+            <div class="footer__item title1">Финансовый рост</div>
+            <div class="footer__item title2">Модное, стильное окружение</div>
+            <div class="footer__item title3">Яркие интересные события</div>
+            <div class="footer__item title4">Путешествия</div>
+            <div class="footer__item title5">Строй бизнес из любой точки мира</div>
+          </div>
+          <div class="footer__button">
+            <button class="js-btn btn" type="button"><img class="btn-img" src="img/user_btn.svg" alt="btn"/>
+            </button>
+          </div>
+        </div>
+      </div>
     </footer>
+    <div class="modal" id="modal">
+      <div class="modal__body">
+        <div class="modal__close js-close"></div>
+        <div class="modal__header"><span>Заявка на участие</span></div>
+        <form class="modal__form" id="form">
+          <div class="modal__box">
+            <input class="modal__input" type="text" name="name" placeholder="Ваше имя">
+          </div>
+          <div class="modal__box">
+            <input class="modal__input" type="tel" name="phone" placeholder="Телефон">
+          </div>
+          <div class="modal__box">
+            <input class="modal__input" type="text" name="promo" placeholder="Промо-код">
+          </div>
+          <div class="modal__submit">
+            <button class="js-btn btn" type="submit"><img class="sub-img" src="img/submit.svg" alt="submit"/>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
     <link rel="stylesheet" href="css/main.css">
     <script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="js/common.js"></script>

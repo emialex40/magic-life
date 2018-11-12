@@ -1,0 +1,14 @@
+.modal#modal
+  .modal__body
+    .modal__close.js-close
+    .modal__header
+      span Заявка на участие
+    form.modal__form#form
+      .modal__box
+        input.modal__input(type="text", name="name",placeholder="Ваше имя")
+      .modal__box
+        input.modal__input(type="tel", name="phone",placeholder="Телефон")
+      .modal__box
+        input.modal__input(type="text", name="promo",placeholder="Промо-код")
+      .modal__submit
+        +button('btn', 'submit', 'sub-img', 'img/submit.svg', 'submit')

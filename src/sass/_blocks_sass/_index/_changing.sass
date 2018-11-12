@@ -8,3 +8,46 @@
   box-sizing: border-box
   margin-top: -86px
   object-fit: cover
+  &__wrapper
+    width: 100%
+    position: relative
+    padding-top: 122px
+  &__header
+    font-family: $extra
+    font-size: 35px
+    font-weight: 400
+    color: $white
+    word-spacing: 4px
+    line-height: 1
+    +text-shadow
+    text-align: center
+  &__items
+    width: 100%
+    margin-top: 34px
+  &__item
+    +itemObj($whiteOp, -11, 145px, $cheng)
+    position: relative
+  &__icon
+    width: 99px
+    height: 37px
+    display: inline-block
+    position: absolute
+    top: 30px
+    left: -20px
+  &__txt
+    display: inline-block
+    width: 173px
+    margin-left: 79px
+    padding-top: 30px
+
+.ch1
+  background: url(../img/numb_icons.png) no-repeat 0 0
+
+.ch2
+  background: url(../img/numb_icons.png) no-repeat -118px 0
+
+.ch3
+  background: url(../img/numb_icons.png) no-repeat 0 -86px
+
+.ch4
+  background: url(../img/numb_icons.png) no-repeat -118px -89px
