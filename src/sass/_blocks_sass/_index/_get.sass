@@ -6,8 +6,16 @@
   clip-path: polygon(0 0, 100% 6.5%, 100% 87.3%, 0 94%)
   -webkit-clip-path: polygon(0 0, 100% 6.5%, 100% 87.3%, 0 94%)
   box-sizing: border-box
-  margin-top: -41px
+  margin-top: -39px
   object-fit: cover
+  +ie-style
+    margin-top: 15px
+  +respond-to(800)
+    height: 1375px
+    background-size: cover
+    clip-path: polygon(0 0, 100% 3.8%, 100% 87.3%, 0 94%)
+    -webkit-clip-path: polygon(0 0, 100% 3.8%, 100% 87.3%, 0 94%)
+    margin-top: -37px
   &__wrapper
     width: 100%
     position: relative
@@ -17,9 +25,28 @@
       background: url(../img/women2.png) no-repeat center center
       bottom: -133px
       left: -147px
+      +ie-style
+        bottom: -195px
+      +respond-to(1183)
+        left: -210px
+      +respond-to(1115)
+        left: -250px
+      +respond-to(1044)
+        left: -295px
+      +respond-to(992)
+        display: none
   &__right
     width: proc(770,1170)
     float: right
+    +respond-to(1183)
+      width: 70%
+    +respond-to(1115)
+      width: 75%
+    +respond-to(1044)
+      width: 80%
+    +respond-to(992)
+      width: 100%
+      float: none
   &__header
     font-family: $extra
     font-size: 35px
@@ -28,6 +55,8 @@
     word-spacing: 4px
     line-height: 1
     +text-shadow
+    +respond-to(480)
+      font-size: 32px
   &__items
     width: 100%
   &__item
@@ -37,13 +66,25 @@
     padding-top: 30px
     padding-left: 30px
     padding-right: 20px
+    +respond-to(800)
+      width: 100%
+      max-width: 370px
+      position: relative
+      left: 50%
+      transform: translateX(-50%)
+    +respond-to(480)
+      max-width: 295px
   &__title
     font-family: $default
     font-size: 24px
     color: $red
+    +respond-to(480)
+      font-size: 20px
   &__txt
     font-family: $default
     font-size: 18px
     font-weight: 400
     color: $black
     padding-top: 20px
+    +respond-to(480)
+      font-size: 16px

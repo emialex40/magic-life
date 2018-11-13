@@ -6,3 +6,9 @@
 	@media only (max-width: $max + px) and (min-width: $min + px)
 		@content
 
+@mixin ie-style
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+		@content
+
+
+

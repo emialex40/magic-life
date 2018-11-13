@@ -7,6 +7,11 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%)
   box-sizing: border-box
   object-fit: cover
+  +respond-to(675)
+    height: 900px
+    background-size: cover
+    clip-path: polygon(0 0, 100% 0, 100% 85.9%, 0 100%)
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85.9%, 0 100%)
   &__wrapper
     margin-top: 80px
     position: relative
@@ -15,12 +20,30 @@
       top: 122px
       left: -58px
       background: url(../img/car.png) no-repeat center center
+      +respond-to(1090)
+        left: -170px
+      +respond-to(920)
+        display: none
+    +respond-to(480)
+      margin-top: 30px
   &__left
     width: 53.7%
+    +respond-to(920)
+      width: 48%
   &__right
     width: 40%
+    +respond-to(920)
+      width: 48%
+    +respond-to(675)
+      width: 100%
   &__logo
     margin-left: procChild(338,53.7,1170) //338px
+    +respond-to(1090)
+      margin-left: 37%
+    +respond-to(920)
+      margin-left: 0
+    +respond-to(480)
+      padding-top: 50px
   &__social
     position: absolute
     top: 0
@@ -36,10 +59,14 @@
     line-height: 36px
     word-spacing: 4px
     +text-shadow
+    +respond-to(480)
+      font-size: 26px
   &__button
     width: procChild(459,40,1170) //459px
     height: 73px
     margin-top: 37px
+    +respond-to(480)
+    width: 70%
 
 
 

@@ -8,17 +8,42 @@
   box-sizing: border-box
   margin-top: -36px
   object-fit: cover
+  +respond-to(785)
+    height: 765px
+    background-size: cover
+    clip-path: polygon(0 0, 100% 6.7%, 100% 92.9%, 0 100%)
+    -webkit-clip-path: polygon(0 0, 100% 6.7%, 100% 92.9%, 0 100%)
+  +respond-to(695)
+    margin-top: -35px
+  +respond-to(661)
+    height: 795px
+  +ie-style
+    margin-top: 15px
   &__wrapper
     width: 100%
     position: relative
     &:before
       +psevdo(416px, 590px)
       background: url(../img/women1.png) no-repeat center center
-      bottom: -165px
+      bottom: -173px
       left: -47px
+      +respond-to(1150)
+        left: -125px
+      +respond-to(1085)
+        left: -195px
+      +respond-to(1018)
+        display: none
+      +ie-style
+        bottom: -175px
   &__wrap-child
     width: proc(770,1170)
     float: right
+    +respond-to(1150)
+      width: 70%
+    +respond-to(1085)
+      width: 75%
+    +respond-to(1018)
+      width: 100%
   &__header
     font-family: $extra
     font-size: 35px
@@ -28,19 +53,38 @@
     word-spacing: 4px
     line-height: 1
     +text-shadow
+    +respond-to(480)
+      font-size: 32px
   &__items
     width: 100%
     margin-top: 41px
   &__left
     width: calc(50% - 10px)
+    +respond-to(785)
+      width: 100%
   &__right
     width: calc(50% - 10px)
+    +respond-to(785)
+      width: 100%
   &__item
     +itemObj($white, 16, 95px, 100%)
     padding: 20px 58px
     box-sizing: border-box
+    max-width: 375px
+    min-width: 371px
+    +respond-to(1190)
+      padding: 20px 45px
+    +respond-to(785)
+      position: relative
+      left: 50%
+      transform: translateX(-50%)
+    +respond-to(480)
+      max-width: 295px
+      min-width: 295px
   &__txt
     font-family: $default
     font-size: 24px
     font-weight: 400
     color: $black
+    +respond-to(480)
+      font-size: 20px

@@ -3,18 +3,38 @@
   height: 901px
   position: relative
   background: url(../img/bg2.jpg) no-repeat center center
-  clip-path: polygon(0 14.3%, 100% 0, 100% 100%, 0 94%)
+  -webkit-clip-path: polygon(0 13.7%, 100% 0, 100% 100%, 0 94.3%)
+  clip-path: polygon(0 13.7%, 100% 0, 100% 100%, 0 94.3%)
   box-sizing: border-box
   margin-top: -108px
   object-fit: cover
+  +ie-style
+    margin-top: 15px
+  +respond-to(859)
+    height: 965px
+    -webkit-clip-path: polygon(0 12.7%, 100% 0, 100% 100%, 0 94.7%)
+    clip-path: polygon(0 12.7%, 100% 0, 100% 100%, 0 94.7%)
+  +respond-to(695)
+    height: 1520px
+    background-size: cover
+    -webkit-clip-path: polygon(0 8.3%, 100% 0, 100% 100%, 0 96.6%)
+    clip-path: polygon(0 8.3%, 100% 0, 100% 100%, 0 96.6%)
   &__wrapper
     width: 100%
     position: relative
     &:after
       +psevdo(477px,876px)
-      bottom: -76px
+      bottom: -82px
       right: -100px
-      background: url(../../../img/men1.png) no-repeat center center
+      background: url(../img/men1.png) no-repeat center center
+      +respond-to(1070)
+        right: -225px
+      +respond-to(1030)
+        right: -285px
+      +respond-to(920)
+        display: none
+      +ie-style
+        bottom: -60px
   &__header
     width: 47%
     font-family: $extra
@@ -25,17 +45,36 @@
     word-spacing: 4px
     line-height: 1
     +text-shadow
+    +respond-to(695)
+      width: 100%
   &__items
     width: 63%
     margin-top: 47px
+    +respond-to(1070)
+      width: 80%
+    +respond-to(920)
+      width: 100%
   &__left
     width: calc(50% - 16px)
+    +respond-to(695)
+      width: 100%
   &__right
     width: calc(50% - 16px)
+    +respond-to(695)
+      width: 100%
   &__item
     +itemObj($blackOp, 16, 165px, 100%)
+    min-width: 337px
+    max-width: 370px
     padding: 24px 17px
     box-sizing: border-box
+    +respond-to(695)
+      position: relative
+      left: 50%
+      transform: translateX(-50%)
+    +respond-to(480)
+      max-width: 295px
+      min-width: 295px
   &__icon
     width: 68px
     height: 67px
@@ -48,9 +87,14 @@
     font-size: 18px
     color: $white
     float: right
+    +respond-to(480)
+      width: 180px
+      font-size: 16px
 
 .accent-txt
   font-size: 30px !important
+  +respond-to(480)
+    font-size: 28px !important
 
 .si1
   background: url(../img/scills_icons.png) no-repeat 0 0

@@ -8,6 +8,24 @@
   box-sizing: border-box
   margin-top: -38px
   object-fit: cover
+  +ie-style
+    margin-top: 15px
+  +respond-to(924)
+    height: 1100px
+    clip-path: polygon(50% 4.9%, 100% 0, 100% 100%, 0 100%, 0 0)
+    -webkit-clip-path: polygon(50% 4.9%, 100% 0, 100% 100%, 0 100%, 0 0)
+  +respond-to(834)
+    height: 1020px
+    clip-path: polygon(50% 5.3%, 100% 0, 100% 100%, 0 100%, 0 0)
+    -webkit-clip-path: polygon(50% 5.3%, 100% 0, 100% 100%, 0 100%, 0 0)
+  +respond-to(800)
+    clip-path: polygon(50% 6.6%, 100% 0, 100% 100%, 0 100%, 0 0)
+    -webkit-clip-path: polygon(50% 6.6%, 100% 0, 100% 100%, 0 100%, 0 0)
+    margin-top: -52px
+  +respond-to(474)
+    height: 1140px
+    clip-path: polygon(50% 5.9%, 100% 0, 100% 100%, 0 100%, 0 0)
+    -webkit-clip-path: polygon(50% 5.9%, 100% 0, 100% 100%, 0 100%, 0 0)
   &__wrapper
     padding-top: 75px
     position: relative
@@ -27,16 +45,36 @@
     +text-shadow
     margin-left: 5%
     padding-top: 35px
+    +respond-to(961)
+      margin-left: 1%
+    +respond-to(924)
+      font-size: 40px
+    +respond-to(834)
+      text-align: center
+      width: 100%
   &__items
     width: 100%
     position: relative
     height: 46vh
+    +respond-to(1125)
+      height: 90vh
+    +respond-to(834)
+      height: 60vh
+      margin-top: 50px
+    +respond-to(474)
+      height: 80vh
   &__item
     font-family: $extra
     font-size: 36px
     color: $white
     +text-shadow
     position: absolute
+    +respond-to(961)
+      font-size: 30px
+    +respond-to(834)
+      position: static
+      text-align: center
+      margin-bottom: 25px
   &__button
     width: proc(670,1170)
     height: 81px
@@ -44,25 +82,49 @@
     left: 50%
     bottom: -137px
     transform: translateX(-50%)
+    +respond-to(480)
+      width: 70%
+      img
+        width: 100%
 
 .title1
   top: 18%
   left: 0
   width: 224px
+  +respond-to(834)
+    width: 100%
 .title2
   top: -52%
   left: 34%
   width: 317px
+  +respond-to(1125)
+    top: -32%
+  +respond-to(1005)
+    left: 35%
+  +respond-to(961)
+    left: 40%
+  +respond-to(834)
+    width: 100%
 .title3
   bottom: 11%
   left: 25%
   width: 325px
+  +respond-to(1125)
+    left: 15%
+  +respond-to(834)
+    width: 100%
 .title4
   top: -64%
   right: 2%
   width: 224px
+  +respond-to(1125)
+    top: -40%
+  +respond-to(834)
+    width: 100%
 .title5
   bottom: 38%
   right: 5%
   width: 320px
+  +respond-to(834)
+    width: 100%
 
