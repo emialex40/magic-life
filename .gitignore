@@ -1,0 +1,11 @@
+/node_modules/
+/.git/
+/**/*.psd
+/**/Thumbs.db
+/.idea/
+/.vscode/
+
+*.rar
+*.zip
+.bowerrc
+package-lock.json

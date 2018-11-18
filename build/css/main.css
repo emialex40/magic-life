@@ -131,7 +131,6 @@ input, button, a {
   -webkit-border-radius: 15px;
           border-radius: 15px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#fe8a38), to(#fd0c12));
-  background-image: -webkit-linear-gradient(bottom, #fe8a38 0%, #fd0c12 100%);
   background-image: linear-gradient(to top, #fe8a38 0%, #fd0c12 100%);
   cursor: pointer;
   border: none;
@@ -141,7 +140,6 @@ input, button, a {
   transition: .5s ease-in-out; }
   .btn:hover {
     background-image: -webkit-gradient(linear, left bottom, left top, from(#fd0c12), to(#fe8a38));
-    background-image: -webkit-linear-gradient(bottom, #fd0c12 0%, #fe8a38 100%);
     background-image: linear-gradient(to top, #fd0c12 0%, #fe8a38 100%);
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out; }
