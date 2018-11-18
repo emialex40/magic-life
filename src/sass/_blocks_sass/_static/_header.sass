@@ -8,10 +8,18 @@
   box-sizing: border-box
   object-fit: cover
   +respond-to(675)
-    height: 900px
+    height: 1350px
     background-size: cover
-    clip-path: polygon(0 0, 100% 0, 100% 85.9%, 0 100%)
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85.9%, 0 100%)
+    clip-path: polygon(0 0, 100% 0, 100% 90.6%, 0 100%)
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90.6%, 0 100%)
+  +respond-to(480)
+    height: 1225px
+    clip-path: polygon(0 0, 100% 0, 100% 89.6%, 0 100%)
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 89.6%, 0 100%)
+  +respond-to(360)
+    height: 1020px
+    clip-path: polygon(0 0, 100% 0, 100% 87.6%, 0 100%)
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 87.6%, 0 100%)
   &__wrapper
     margin-top: 80px
     position: relative
@@ -25,11 +33,13 @@
       +respond-to(920)
         display: none
     +respond-to(480)
-      margin-top: 30px
+      margin-top: 17px
   &__left
     width: 53.7%
     +respond-to(920)
       width: 48%
+    +respond-to(480)
+      width: 100%
   &__right
     width: 40%
     +respond-to(920)
@@ -43,7 +53,8 @@
     +respond-to(920)
       margin-left: 0
     +respond-to(480)
-      padding-top: 50px
+      padding-top: 63px
+      width: 100%
   &__social
     position: absolute
     top: 0
@@ -51,22 +62,39 @@
   &__submit
     width: 100%
     padding-top: 112px
+    +respond-to(480)
+      padding-top: 23px
   &__text
     color: $white
     font-family: $extra
     font-size: 34px
-    //font-weight: 400
     line-height: 36px
     word-spacing: 4px
     +text-shadow
     +respond-to(480)
-      font-size: 26px
+      font-size: 21px
+      text-align: center
   &__button
     width: procChild(459,40,1170) //459px
     height: 73px
     margin-top: 37px
     +respond-to(480)
-    width: 70%
+      width: 100%
+      margin-top: 47px
+  &__mobile
+    display: none
+    width: 100%
+    object-fit: cover
+    img
+      width: 100%
+    +respond-to(920)
+      display: inline-block
+      margin-left: -100%
+      margin-top: -50px
+    +respond-to(675)
+      margin-left: 0
+      margin-top: 0
+
 
 
 

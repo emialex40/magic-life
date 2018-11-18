@@ -10,18 +10,29 @@
   object-fit: cover
   +ie-style
     margin-top: 15px
+  +respond-to(920)
+    position: relative
   +respond-to(859)
     height: 965px
     -webkit-clip-path: polygon(0 12.7%, 100% 0, 100% 100%, 0 94.7%)
     clip-path: polygon(0 12.7%, 100% 0, 100% 100%, 0 94.7%)
   +respond-to(695)
-    height: 1520px
+    height: 1355px
     background-size: cover
     -webkit-clip-path: polygon(0 8.3%, 100% 0, 100% 100%, 0 96.6%)
     clip-path: polygon(0 8.3%, 100% 0, 100% 100%, 0 96.6%)
+  +respond-to(480)
+    height: 1310px
+    -webkit-clip-path: polygon(0 9.8%, 100% 0, 100% 100%, 0 95.9%)
+    clip-path: polygon(0 9.8%, 100% 0, 100% 100%, 0 95.9%)
   &__wrapper
     width: 100%
     position: relative
+    +respond-to(920)
+      position: absolute
+      top: 60px
+      left: 0
+      right: 0
     &:after
       +psevdo(477px,876px)
       bottom: -82px
@@ -47,6 +58,9 @@
     +text-shadow
     +respond-to(695)
       width: 100%
+    +respond-to(480)
+      text-align: center
+      font-size: 21px
   &__items
     width: 63%
     margin-top: 47px
@@ -54,6 +68,8 @@
       width: 80%
     +respond-to(920)
       width: 100%
+    +respond-to(480)
+      margin-top: 20px
   &__left
     width: calc(50% - 16px)
     +respond-to(695)
@@ -72,6 +88,7 @@
       position: relative
       left: 50%
       transform: translateX(-50%)
+      height: auto
     +respond-to(480)
       max-width: 295px
       min-width: 295px
@@ -80,6 +97,9 @@
     height: 67px
     display: inline-block
     float: left
+    +respond-to(480)
+      width: 55px
+      height: 55px
   &__txt
     display: inline-block
     width: 235px
@@ -88,8 +108,18 @@
     color: $white
     float: right
     +respond-to(480)
-      width: 180px
-      font-size: 16px
+      width: 190px
+      font-size: 15px
+  &__bg_img
+    display: none
+    +respond-to(920)
+      display: inline-block
+      margin-top: 30px
+      float: right
+    +respond-to(695)
+      margin-top: 78px
+    +respond-to(480)
+      margin-top: 30px
 
 .accent-txt
   font-size: 30px !important
@@ -98,21 +128,33 @@
 
 .si1
   background: url(../img/scills_icons.png) no-repeat 0 0
+  +respond-to(480)
+    background: url(../img/scills_icon_mob.png) no-repeat -76px -69px
 
 .si2
   background: url(../img/scills_icons.png) no-repeat 0 -100px
+  +respond-to(480)
+    background: url(../img/scills_icon_mob.png) no-repeat 0 -73px
 
 .si3
   background: url(../img/scills_icons.png) no-repeat 0 -193px
+  +respond-to(480)
+    background: url(../img/scills_icon_mob.png) no-repeat 0 0
 
 .si4
   background: url(../img/scills_icons.png) no-repeat -86px 0
+  +respond-to(480)
+    background: url(../img/scills_icon_mob.png) no-repeat -149px 0
 
 .si5
   background: url(../img/scills_icons.png) no-repeat -86px -99px
+  +respond-to(480)
+    background: url(../img/scills_icon_mob.png) no-repeat -148px -72px
 
 .si6
   background: url(../img/scills_icons.png) no-repeat -86px -194px
+  +respond-to(480)
+    background: url(../img/scills_icon_mob.png) no-repeat -73px 0
 
 
 

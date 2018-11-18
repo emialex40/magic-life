@@ -16,12 +16,21 @@
     height: 1090px
     -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95.2%)
     clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95.2%)
+  +respond-to(480)
+    height: 955px
+    -webkit-clip-path: polygon(0 5.95%, 100% 0, 100% 100%, 0 94.5%)
+    clip-path: polygon(0 5.95%, 100% 0, 100% 100%, 0 94.5%)
   +ie-style
     margin-top: 15px
   &__wrapper
     width: 100%
     position: relative
     padding-top: 108px
+    +respond-to(920)
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
     &:after
       +psevdo(419px, 745px)
       background: url(../img/men2.png) no-repeat center center
@@ -51,7 +60,9 @@
     line-height: 1
     +text-shadow
     +respond-to(920)
-      text-align: center
+      font-size: 30px
+    +respond-to(480)
+      font-size: 21px
   &__item
     //width: 100%
     +itemObj($blackOpLight, -11, 100px, 100%)
@@ -63,6 +74,8 @@
       transform: translateX(-50%)
     +respond-to(480)
       max-width: 295px
+      height: 90px
+      margin-bottom: -23px
   &__txt
     display: block
     font-family: $default
@@ -73,7 +86,7 @@
     top: 50%
     transform: translateY(-50%)
     +respond-to(480)
-      font-size: 18px
+      font-size: 17px
   &__button
     width: 100%
     height: 81px
@@ -81,9 +94,21 @@
     left: 0
     bottom: 0
     +respond-to(920)
-      width: 37%
+      width: 50%
       left: 50%
       transform: translateX(-50%)
       bottom: -125px
+    +respond-to(630)
+      width: 80%
     +respond-to(480)
-      width: 75%
+      width: 300px
+      height: 52px
+  &__bg_img
+    display: none
+    +respond-to(920)
+      display: inline-block
+      margin-top: 280px
+      float: right
+      margin-right: -210px
+    +respond-to(480)
+      margin-top: -20px

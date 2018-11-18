@@ -16,12 +16,17 @@
   +respond-to(695)
     margin-top: -35px
   +respond-to(661)
-    height: 795px
+    height: 800px
   +ie-style
     margin-top: 15px
   &__wrapper
     width: 100%
     position: relative
+    +respond-to(920)
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
     &:before
       +psevdo(416px, 590px)
       background: url(../img/women1.png) no-repeat center center
@@ -53,8 +58,11 @@
     word-spacing: 4px
     line-height: 1
     +text-shadow
+    +respond-to(785)
+      font-size: 21px
+      padding-top: 235px
     +respond-to(480)
-      font-size: 32px
+      width: 253px
   &__items
     width: 100%
     margin-top: 41px
@@ -67,7 +75,7 @@
     +respond-to(785)
       width: 100%
   &__item
-    +itemObj($white, 16, 95px, 100%)
+    +itemObj($white, 16, auto, 100%)
     padding: 20px 58px
     box-sizing: border-box
     max-width: 375px
@@ -87,4 +95,15 @@
     font-weight: 400
     color: $black
     +respond-to(480)
-      font-size: 20px
+      font-size: 18px
+  &__bg_img
+    display: none
+    +respond-to(920)
+      display: inline-block
+      margin-top: 30px
+      float: right
+      margin-right: -210px
+    +respond-to(695)
+      margin-top: 78px
+    +respond-to(785)
+      margin-top: 150px
