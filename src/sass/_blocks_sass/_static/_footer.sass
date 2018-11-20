@@ -15,25 +15,53 @@
     clip-path: polygon(50% 4.9%, 100% 0, 100% 100%, 0 100%, 0 0)
     -webkit-clip-path: polygon(50% 4.9%, 100% 0, 100% 100%, 0 100%, 0 0)
   +respond-to(834)
-    height: 1020px
-    clip-path: polygon(50% 5.3%, 100% 0, 100% 100%, 0 100%, 0 0)
-    -webkit-clip-path: polygon(50% 5.3%, 100% 0, 100% 100%, 0 100%, 0 0)
+    height: 1780px
+    clip-path: polygon(50% 3.1%, 100% 0, 100% 100%, 0 100%, 0 0)
+    -webkit-clip-path: polygon(50% 3.1%, 100% 0, 100% 100%, 0 100%, 0 0)
+    background-image: linear-gradient(-57deg, #293b4e 21%, #889da8 38%, #293b4e 58%)    //#305373 #889da8
   +respond-to(800)
-    clip-path: polygon(50% 6.6%, 100% 0, 100% 100%, 0 100%, 0 0)
-    -webkit-clip-path: polygon(50% 6.6%, 100% 0, 100% 100%, 0 100%, 0 0)
+    clip-path: polygon(50% 3.9%, 100% 0, 100% 100%, 0 100%, 0 0)
+    -webkit-clip-path: polygon(50% 3.9%, 100% 0, 100% 100%, 0 100%, 0 0)
     margin-top: -52px
-  +respond-to(474)
-    height: 1140px
-    clip-path: polygon(50% 5.9%, 100% 0, 100% 100%, 0 100%, 0 0)
-    -webkit-clip-path: polygon(50% 5.9%, 100% 0, 100% 100%, 0 100%, 0 0)
+  +respond-to(697)
+    height: 1645px
+    clip-path: polygon(50% 4.1%, 100% 0, 100% 100%, 0 100%, 0 0)
+    -webkit-clip-path: polygon(50% 4.1%, 100% 0, 100% 100%, 0 100%, 0 0)
+  +respond-to(501)
+    height: 1275px
+    clip-path: polygon(50% 5.4%, 100% 0, 100% 100%, 0 100%, 0 0)
+    -webkit-clip-path: polygon(50% 5.4%, 100% 0, 100% 100%, 0 100%, 0 0)
+  +respond-to(470)
+    height: 1078px
+    clip-path: polygon(50% 6.4%, 100% 0, 100% 100%, 0 100%, 0 0)
+    -webkit-clip-path: polygon(50% 6.4%, 100% 0, 100% 100%, 0 100%, 0 0)
+  +respond-to(390)
+    height: 975px
+    clip-path: polygon(50% 6.9%, 100% 0, 100% 100%, 0 100%, 0 0)
+    -webkit-clip-path: polygon(50% 6.9%, 100% 0, 100% 100%, 0 100%, 0 0)
   &__wrapper
     padding-top: 75px
     position: relative
+    +respond-to(834)
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
   &__top
     width: 100%
   &__logo
     display: inline-block
     float: left
+    +respond-to(834)
+      float: none
+      width: 327px
+      position: relative
+      top: -210px
+      left: 50%
+      transform: translateX(-50%)
+    +respond-to(502)
+      width: 154px
+      top: -135px
   &__header
     display: inline-block
     font-family: $extra
@@ -50,8 +78,32 @@
     +respond-to(924)
       font-size: 40px
     +respond-to(834)
-      text-align: center
       width: 100%
+      position: absolute
+      top: -109%
+      left: 10%
+    +respond-to(761)
+      top: -135%
+    +respond-to(697)
+      top: -122%
+    +respond-to(630)
+      top: -90%
+      left: 5%
+    +respond-to(501)
+      top: -104%
+      left: 0
+      font-size: 30px
+    +respond-to(474)
+      top: -150%
+    +respond-to(436)
+      top: -135%
+    +respond-to(410)
+      top: -130%
+    +respond-to(386)
+      top: -121%
+      font-size: 25px
+    +respond-to(355)
+      top: -118%
   &__items
     width: 100%
     position: relative
@@ -59,10 +111,19 @@
     +respond-to(1125)
       height: 90vh
     +respond-to(834)
+      position: relative
+      height: 50vh //30vh
+      margin-top: -135px
+      width: 60% //306px
+      left: 50%
+      transform: translateX(-50%)
+    +respond-to(630)
       height: 60vh
-      margin-top: 50px
-    +respond-to(474)
-      height: 80vh
+    +respond-to(501)
+      height: 35vh
+      width: 306px
+    //+respond-to(474)
+    //  height: 80vh
   &__item
     font-family: $extra
     font-size: 36px
@@ -73,8 +134,10 @@
       font-size: 30px
     +respond-to(834)
       position: static
-      text-align: center
       margin-bottom: 25px
+      font-size: 30px //18px
+    +respond-to(501)
+      font-size: 18px
   &__button
     width: proc(670,1170)
     height: 81px
@@ -82,10 +145,19 @@
     left: 50%
     bottom: -137px
     transform: translateX(-50%)
-    +respond-to(480)
-      width: 70%
+    +respond-to(834)
+      width: 100%
+      max-width: 306px
       img
         width: 100%
+  &__img_bg
+    display: none
+    +respond-to(834)
+      display: block
+      width: 100%
+      img
+        width: 140%
+        transform: translate(-15%, -5%)
 
 .title1
   top: 18%
@@ -94,9 +166,11 @@
   +respond-to(834)
     width: 100%
 .title2
-  top: -52%
+  top: -33% //-52%
   left: 34%
   width: 317px
+  +respond-to(1440)
+    top: -52%
   +respond-to(1125)
     top: -32%
   +respond-to(1005)

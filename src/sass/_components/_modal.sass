@@ -11,6 +11,10 @@
   box-sizing: border-box
   padding: 5px
   border: 1px solid $black
+  +respond-to(920)
+    width: 80%
+  +respond-to(480)
+    width: 100%
   &__body
     width: 100%
     height: 100%
@@ -37,6 +41,8 @@
     width: 70.9%
     margin: 0 auto
     box-sizing: border-box
+    +respond-to(920)
+      width: 90%
   &__box
     width: 100%
     margin-bottom: 20px
@@ -60,3 +66,5 @@
     height: 81px
     margin-top: 44px
     box-sizing: border-box
+    +respond-to(480)
+      height: 55px
