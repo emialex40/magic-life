@@ -874,10 +874,14 @@ input, button, a {
         display: inline-block;
         margin-top: 280px;
         float: right;
-        margin-right: -210px; } }
+        margin-right: -50px; } }
+    @media only screen and (max-width: 630px) {
+      .business__bg_img {
+        margin-right: -175px; } }
     @media only screen and (max-width: 480px) {
       .business__bg_img {
-        margin-top: -20px; } }
+        margin-right: -4px;
+        margin-top: 141px; } }
 
 /*========= get ==========*/
 .get {
@@ -1160,7 +1164,8 @@ input, button, a {
       height: 1780px;
       clip-path: polygon(50% 3.1%, 100% 0, 100% 100%, 0 100%, 0 0);
       -webkit-clip-path: polygon(50% 3.1%, 100% 0, 100% 100%, 0 100%, 0 0);
-      background-image: linear-gradient(-57deg, #293b4e 21%, #889da8 38%, #293b4e 58%); } }
+      background-image: linear-gradient(-57deg, #293b4e 21%, #889da8 38%, #293b4e 58%);
+      object-fit: cover; } }
   @media only screen and (max-width: 800px) {
     .footer {
       clip-path: polygon(50% 3.9%, 100% 0, 100% 100%, 0 100%, 0 0);
@@ -1235,17 +1240,17 @@ input, button, a {
       .footer__header {
         width: 100%;
         position: absolute;
-        top: -109%;
+        top: -64%;
         left: 10%; } }
     @media only screen and (max-width: 761px) {
       .footer__header {
-        top: -135%; } }
+        top: -65%; } }
     @media only screen and (max-width: 697px) {
       .footer__header {
-        top: -122%; } }
+        top: -60%; } }
     @media only screen and (max-width: 630px) {
       .footer__header {
-        top: -90%;
+        top: -50%;
         left: 5%; } }
     @media only screen and (max-width: 501px) {
       .footer__header {
@@ -1257,17 +1262,17 @@ input, button, a {
         top: -150%; } }
     @media only screen and (max-width: 436px) {
       .footer__header {
-        top: -135%; } }
+        top: -187%; } }
     @media only screen and (max-width: 410px) {
       .footer__header {
         top: -130%; } }
     @media only screen and (max-width: 386px) {
       .footer__header {
-        top: -121%;
+        top: -85%;
         font-size: 25px; } }
     @media only screen and (max-width: 355px) {
       .footer__header {
-        top: -118%; } }
+        top: -81%; } }
   .footer__items {
     width: 100%;
     position: relative;
@@ -1331,10 +1336,7 @@ input, button, a {
         display: block;
         width: 100%; }
         .footer__img_bg img {
-          width: 140%;
-          -webkit-transform: translate(-15%, -5%);
-              -ms-transform: translate(-15%, -5%);
-                  transform: translate(-15%, -5%); } }
+          width: 100%; } }
 
 .title1 {
   top: 18%;
