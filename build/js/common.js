@@ -16,18 +16,18 @@ $(document).ready(function () {
     $('#form').submit(function (e) {
         e.preventDefault();
 
-            var form_data = $(this).serialize();
-            $.ajax({
-                type: 'POST',
-                url: 'send.php',
-                data: form_data,
-                success: function () {
-                    alert("success")
-                    location.reload();
-                },
-                error: function () {
-                    alert('При отправке сообщения произошла ошибка!');
-                }
-            });
+        var form_data = $(this).serialize();
+        $.ajax({
+            type: 'POST',
+            url: 'send.php',
+            data: form_data,
+            success: function () {
+                $('.js-form').fadeOut(500);
+                $('.js-tnx').slideDown(500)
+            },
+            error: function () {
+                alert('При отправке сообщения произошла ошибка!');
+            }
+        });
     });
 });

@@ -10,6 +10,8 @@
   object-fit: cover
   +ie-style
     margin-top: 15px
+  +respond-to(1200)
+    height: 540px
   +respond-to(1126)
     height: 610px
     clip-path: polygon(100% 0, 100% 91.2%, 50% 100%, 0 91.2%, 0 9%)
@@ -20,7 +22,7 @@
     clip-path: polygon(100% 0, 100% 89%, 50% 100%, 0 89%, 0 15%)
     -webkit-clip-path: polygon(100% 0, 100% 89%, 50% 100%, 0 89%, 0 15%)
     margin-top: -170px
-  +respond-to(586)
+  +respond-to(619)
     height: 1040px
     background-size: cover
     clip-path: polygon(100% 0, 100% 93.5%, 50% 100%, 0 93.5%, 0 8.9%)
@@ -47,16 +49,24 @@
   &__items
     width: 100%
     margin-top: 34px
+    +respond-to(1200)
+      justify-content: space-around
+      column-count: 2
+    +respond-to(600)
+      column-count: 1
+      justify-content: center
+      align-items: center
   &__item
     +itemObj($whiteOp, -11, 145px, $cheng)
     position: relative
-    min-width: 270px
-    +respond-to(1126)
+    min-width: 275px
+    +respond-to(1200)
       margin-bottom: 30px
+      margin-right: 20px
     +respond-to(586)
-      position: relative
-      left: 50%
-      transform: translateX(-50%)
+      //position: relative
+      //left: 50%
+      //transform: translateX(-50%)
   &__icon
     width: 99px
     height: 37px

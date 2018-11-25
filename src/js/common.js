@@ -22,8 +22,8 @@ $(document).ready(function () {
             url: 'send.php',
             data: form_data,
             success: function () {
-                alert("success")
-                location.reload();
+                $('.js-form').fadeOut(500);
+                $('.js-tnx').slideDown(500)
             },
             error: function () {
                 alert('При отправке сообщения произошла ошибка!');

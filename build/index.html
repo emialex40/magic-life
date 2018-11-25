@@ -37,9 +37,9 @@
             </div>
             <div class="header__social">
               <ul class="soc_icons">
-                <li class="soc_icons__icon"><a class="soc_icons__link vk" href="#"></a></li>
-                <li class="soc_icons__icon"><a class="soc_icons__link fb" href="#"></a></li>
-                <li class="soc_icons__icon"><a class="soc_icons__link insta" href="#"></a></li>
+                <li class="soc_icons__icon"><a class="soc_icons__link vk" href="https://vk.com/magiclifegame" target="_blank"></a></li>
+                <li class="soc_icons__icon"><a class="soc_icons__link fb" href="https://www.facebook.com/magiclifegame/" target="_blank"></a></li>
+                <li class="soc_icons__icon"><a class="soc_icons__link insta" href="https://www.instagram.com/magic_life_game/" target="_blank"></a></li>
               </ul>
             </div>
           </div>
@@ -57,7 +57,7 @@
                 <div class="scills__item">
                   <div class="scills__icon si1"></div><span class="scills__txt">
                     Сьемка, захватывающих и
-                    живых видиоисторий,
+                    живых видеоисторий,
                     которые сделают тебя
                     популярным и узнаваеым</span>
                 </div>
@@ -66,7 +66,7 @@
                     Профессиональное
                     ведение социальных сетей,
                     которое позволит тебе
-                    стать профессиональным
+                    стать крутым
                     блогером с тысячной
                     аудиторией</span>
                 </div>
@@ -165,7 +165,7 @@
                     <div class="business__txt"><span>Где ты сможешь реализовать свои самые смелые мечты</span></div>
                   </div>
                   <div class="business__item">
-                    <div class="business__txt"><span>Где каждый день будет приносить радость, а эмоции и драйв будут переливатся через край</span></div>
+                    <div class="business__txt"><span>Где каждый день будет приносить радость, а эмоции и драйв будут переливаться через край</span></div>
                   </div>
                 </div>
               </div>
@@ -296,22 +296,32 @@
       <div class="modal" id="modal">
         <div class="modal__body">
           <div class="modal__close js-close"></div>
-          <div class="modal__header"><span>Заявка на участие</span></div>
-          <form class="modal__form" id="form">
-            <div class="modal__box">
-              <input class="modal__input" type="text" name="name" placeholder="Ваше имя">
+          <div class="modal__form_block js-form">
+            <div class="modal__header"><span>Заявка на участие</span></div>
+            <form class="modal__form" id="form">
+              <div class="modal__box">
+                <input class="modal__input" type="text" name="name" placeholder="Ваше имя">
+              </div>
+              <div class="modal__box">
+                <input class="modal__input" type="tel" name="phone" placeholder="Телефон" required>
+              </div>
+              <div class="modal__box">
+                <input class="modal__input" type="text" name="promo" placeholder="Промо-код">
+              </div>
+              <div class="modal__submit">
+                <button class="js-btn btn" type="submit"><img class="sub-img" src="img/submit.svg" alt="submit"/>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="modal__tnx js-tnx" style="display: none;">
+            <div class="modal__text">
+              <div class="modal__text--top">
+                <h3>Спасибо!</h3><span>Ваша заявка принята!</span>
+              </div>
+              <div class="modal__text--bottom"><span>Мы свяжемся с Вами в ближайшее время!</span></div>
             </div>
-            <div class="modal__box">
-              <input class="modal__input" type="tel" name="phone" placeholder="Телефон" required>
-            </div>
-            <div class="modal__box">
-              <input class="modal__input" type="text" name="promo" placeholder="Промо-код">
-            </div>
-            <div class="modal__submit">
-              <button class="js-btn btn" type="submit"><img class="sub-img" src="img/submit.svg" alt="submit"/>
-              </button>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>

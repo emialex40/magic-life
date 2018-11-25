@@ -1,14 +1,23 @@
 .modal#modal
   .modal__body
     .modal__close.js-close
-    .modal__header
-      span Заявка на участие
-    form.modal__form#form
-      .modal__box
-        input.modal__input(type="text", name="name",placeholder="Ваше имя")
-      .modal__box
-        input.modal__input(type="tel", name="phone",placeholder="Телефон" required)
-      .modal__box
-        input.modal__input(type="text", name="promo",placeholder="Промо-код")
-      .modal__submit
-        +button('btn', 'submit', 'sub-img', 'img/submit.svg', 'submit')
+    .modal__form_block.js-form
+      .modal__header
+        span Заявка на участие
+      form.modal__form#form
+        .modal__box
+          input.modal__input(type="text", name="name",placeholder="Ваше имя")
+        .modal__box
+          input.modal__input(type="tel", name="phone",placeholder="Телефон" required)
+        .modal__box
+          input.modal__input(type="text", name="promo",placeholder="Промо-код")
+        .modal__submit
+          +button('btn', 'submit', 'sub-img', 'img/submit.svg', 'submit')
+    .modal__tnx.js-tnx(style="display: none;")
+      .modal__text
+        .modal__text--top
+          h3 Спасибо!
+          span Ваша заявка принята!
+        .modal__text--bottom
+          span Мы свяжемся с Вами в ближайшее время!
+
